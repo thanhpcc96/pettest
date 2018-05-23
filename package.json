@@ -1,0 +1,43 @@
+{
+  "name": "microfilm",
+  "version": "1.0.0",
+  "description": "Private project using test framework",
+  "scripts": {
+    "dev": "moleculer-runner --env --repl --hot services",
+    "start": "moleculer-runner --env",
+    "ci": "jest --watch",
+    "test": "jest --coverage",
+    "lint": "eslint services"
+  },
+  "author": "Thanh Pham",
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "jest": "^22.4.2",
+    "jest-cli": "^22.4.2",
+    "moleculer-repl": "^0.4.0"
+  },
+  "dependencies": {
+    "bcrypt": "1.0.3",
+    "dotenv": "^5.0.1",
+    "ioredis": "^3.2.2",
+    "jsonwebtoken": "8.1.0",
+    "lodash": "^4.17.10",
+    "moleculer": "^0.12.0",
+    "moleculer-db": "0.7.0",
+    "moleculer-db-adapter-mongo": "0.1.6",
+    "moleculer-web": "^0.6.0",
+    "nats": "0.7.24",
+    "slug": "0.9.1"
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  },
+  "jest": {
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "rootDir": "./services",
+    "roots": [
+      "../test"
+    ]
+  }
+}
