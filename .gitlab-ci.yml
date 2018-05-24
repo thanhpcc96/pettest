@@ -6,7 +6,7 @@ stages:
 - test
 - release
 - deploy
- variables:
+variables:
   SERVER_TEST_IMAGE: thanhpcc/petfilm:$CI_BUILD_REF_NAME
   SERVER_RELEASE_IMAGE: thanhpcc/petfilm:latest
 before_script:
